@@ -15,7 +15,7 @@ cxx_compiler_version:
 glib:
 - '2.58'
 icu:
-- '58'
+- '64.2'
 libxml2:
 - '2.9'
 macos_machine:
@@ -23,7 +23,7 @@ macos_machine:
 macos_min_version:
 - '10.9'
 perl:
-- '5.26'
+- 5.26.2
 pin_run_as_build:
   icu:
     max_pin: x
