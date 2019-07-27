@@ -15,11 +15,11 @@ docker_image:
 glib:
 - '2.58'
 icu:
-- '58'
+- '64.2'
 libxml2:
 - '2.9'
 perl:
-- '5.26'
+- 5.26.2
 pin_run_as_build:
   icu:
     max_pin: x
