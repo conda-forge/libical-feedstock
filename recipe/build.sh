@@ -17,5 +17,5 @@ cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
       -DGOBJECT_INTROSPECTION=${use_goi} \
       ..
 make
-make ARGS="-E .*libical-glib.*" test
+make ARGS="-E .*libical-glib.* -E timezones" test
 make install
