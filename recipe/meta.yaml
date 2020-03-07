@@ -1,5 +1,5 @@
 {% set name = "libical" %}
-{% set version = "3.0.7" %}
+{% set version = "3.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0abe66df1ea826e57db7f281c704ede834c84139012e6c686ea7adafd4e763fc
+  sha256: 09fecacaf75ba5a242159e3a9758a5446b5ce4d0ab684f98a7040864e1d1286f
 
 build:
   number: 0
@@ -43,7 +43,7 @@ about:
   license: MPL v2
   license_family: OTHER
   license_file: LICENSE.MPL2.txt
-  summary: 'An Open Source implementation of the iCalendar protocols and protocol data units'
+  summary: An Open Source implementation of the iCalendar protocols and protocol data units
   description: |
     Libical is an Open Source implementation of the iCalendar protocols and protocol data units.
     The iCalendar specification describes how calendar clients can communicate with calendar
