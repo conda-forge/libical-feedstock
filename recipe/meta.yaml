@@ -29,9 +29,6 @@ requirements:
     - libxml2
     - gobject-introspection  # [linux]
   run:
-    - icu
-    - glib
-    - libxml2
     - {{ pin_compatible("gobject-introspection", max_pin="x.x") }}  # [linux]
 
 test:
