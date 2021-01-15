@@ -16,6 +16,10 @@ cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
       -DICAL_BUILD_DOCS=false \
       -DGOBJECT_INTROSPECTION=${use_goi} \
       ..
-make
+if [[ "${target_platform}" == linux-* ]]; then
+    make ical-glib
+    cp lib/libical* $PREFIX/lib
+fi
+make -j${CPU_COUNT}
 make ARGS="-E .*libical-glib.*\|timezones" test
 make install

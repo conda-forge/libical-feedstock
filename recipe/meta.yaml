@@ -10,7 +10,7 @@ source:
   sha256: 09fecacaf75ba5a242159e3a9758a5446b5ce4d0ab684f98a7040864e1d1286f
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('libical', max_pin='x') }}
@@ -29,9 +29,6 @@ requirements:
     - libxml2
     - gobject-introspection  # [linux]
   run:
-    - icu
-    - glib
-    - libxml2
     - {{ pin_compatible("gobject-introspection", max_pin="x.x") }}  # [linux]
 
 test:
