@@ -1,5 +1,5 @@
 {% set name = "libical" %}
-{% set version = "3.0.10" %}
+{% set version = "3.0.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f933b3e6cf9d56a35bb5625e8e4a9c3a50239a85aea05ed842932c1a1dc336b4
+  sha256: 019085ba99936f25546d86cb3e34852e5fe2b5a7d5f1cb4423a0cc42e399f629
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('libical', max_pin='x') }}
