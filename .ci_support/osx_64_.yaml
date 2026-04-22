@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '11'
+- '16'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -11,20 +11,17 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '11'
+- '16'
 glib:
 - '2'
 icu:
-- '69'
+- '73'
 libxml2:
-- '2.9'
+- '2.12'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 perl:
 - 5.32.1
-pin_run_as_build:
-  libxml2:
-    max_pin: x.x
 target_platform:
 - osx-64
 zip_keys:
